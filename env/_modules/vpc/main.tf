@@ -225,7 +225,7 @@ resource "aws_route_table_association" "private_b" {
 #create private subnet c association
 resource "aws_route_table_association" "private_c" {
   subnet_id      = aws_subnet.private_c.id
-  route_table_id = aws_route_table.private_b.id
+  route_table_id = aws_route_table.private_c.id
 }
 
 #set public route table as main
